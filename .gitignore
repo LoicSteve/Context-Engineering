@@ -185,5 +185,8 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+# Local Codex/agent files
+.agents/
+
 # Operating system files
 .DS_Store
