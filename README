@@ -1,0 +1,12 @@
+skill-name/
+├── SKILL.md              # Required: metadata + instructions
+├── scripts/              # Optional: executable code
+│   ├── validate.py
+│   ├── deploy.sh
+│   └── README.md
+├── references/           # Optional: documentation links
+│   ├── api-reference.md
+│   └── examples.md
+└── assets/               # Optional: templates, data
+    ├── template.yaml
+    └── config-example.json
