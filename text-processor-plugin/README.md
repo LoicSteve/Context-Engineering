@@ -35,3 +35,40 @@ The plugin can use your local server or the deployed Spaces version:
 
 **Remote:** Update the `.mcp.json` or `opencode.json` URL to your deployed Space:
 `https://YOUR-USERNAME-text-processor-mcp.hf.space/gradio_api/mcp/`
+
+
+**Claude Code Plugin Structure**
+
+my-plugin/
+├── .claude-plugin/
+│   └── plugin.json             # Plugin manifest
+├── skills/                     # Collection of skills
+│   ├── analyze-text/
+│   │   └── SKILL.md            # Skill definition
+│   ├── extract-keywords/
+│   │   └── SKILL.md
+│   └── check-reading-level/
+│       └── SKILL.md
+├── agents/                     # Custom agents (optional)
+├── .mcp.json                   # MCP server configuration
+├── hooks/                      # Hook configuration (optional)
+│   └── hooks.json
+├── .lsp.json                   # LSP server configuration (optional)
+├── settings.json               # Plugin defaults (optional)
+└── README.md                   # Documentation
+
+
+**our example**
+
+
+text-processor-plugin/
+├── .claude-plugin/
+│   └── plugin.json                       # Claude Code manifest
+├── .codex-plugin/
+│   └── plugin.json                       # Codex manifest
+├── .mcp.json                             # Shared MCP config for both
+├── README.md                             # Documentation
+└── skills/
+    ├── analyze-text/SKILL.md
+    ├── extract-keywords/SKILL.md
+    └── check-reading-level/SKILL.md
